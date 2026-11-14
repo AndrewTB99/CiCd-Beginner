@@ -243,10 +243,9 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-
-      steps:
       - name: Force a failure
         run: exit 1
+    
       - name: Download all artifacts
         uses: actions/download-artifact@v7
         with:
