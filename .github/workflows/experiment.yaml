@@ -19,5 +19,5 @@ jobs:
           echo "PATH IN STEP TWO: $GITHUB_STEP_SUMMARY"
           echo "--- content ---"
           cat "$GITHUB_STEP_SUMMARY"
-          run: echo "written by step two" >> $GITHUB_STEP_SUMMARY
+          echo "written by step two" >> $GITHUB_STEP_SUMMARY
           echo "--- size in bytes: $(wc -c < "$GITHUB_STEP_SUMMARY") ---"
