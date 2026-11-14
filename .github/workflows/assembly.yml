@@ -27,7 +27,8 @@ jobs:
         with:
           name: car-files
           path: |
-            build/
+            build/car.txt
+            build/spare_parts_car.txt
           retention-days: 1
 
   build_motorbike:
@@ -43,7 +44,7 @@ jobs:
           echo "Seat" >> build/motorbike.txt
           echo "Fuel Tank" >> build/motorbike.txt
           echo "Winter wheels for motorbike" > build/spare_parts_motorbike.txt
-          echo "Invoice for car" > build/invoice_motorbike.txt
+          echo "Invoice for motorbike" > build/invoice_motorbike.txt
           echo "Motorbike Assembly Completed!"
           cat build/motorbike.txt
 
@@ -102,7 +103,7 @@ jobs:
           echo "Cargo Bed" >> build/truck.txt
           echo "Cabin" >> build/truck.txt
           echo "Winter wheels for truck" > build/spare_parts_truck.txt
-          echo "Invoice for car" > build/invoice_truck.txt
+          echo "Invoice for truck" > build/invoice_truck.txt
           echo "Truck Assembly Completed!"
           cat build/truck.txt
 
