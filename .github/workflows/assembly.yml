@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Assemble car
         run: |
+          exit 1
           mkdir -p build
           echo "Chassis" > build/car.txt
           echo "Engine" >> build/car.txt
