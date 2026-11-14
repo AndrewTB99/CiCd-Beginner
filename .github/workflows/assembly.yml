@@ -26,8 +26,7 @@ jobs:
         with:
           name: car-files
           path: |
-            build/car.txt
-            build/spare_parts_car.txt
+            build/
           retention-days: 1
 
   build_motorbike:
