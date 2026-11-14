@@ -56,9 +56,7 @@ jobs:
           retention-days: 1
 
   test_car:
-    needs: |
-      build_car
-      build_motorbike
+    needs: build_car
     runs-on: ubuntu-latest
     steps:
       - name: Download car artifact
