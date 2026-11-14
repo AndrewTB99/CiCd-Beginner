@@ -248,8 +248,6 @@ jobs:
       - name: Force a failure
         run: exit 1
       - name: Download all artifacts
-        ...
-      - name: Download all artifacts
         uses: actions/download-artifact@v7
         with:
           path: build/
