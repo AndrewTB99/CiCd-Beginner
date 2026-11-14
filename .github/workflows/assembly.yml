@@ -12,7 +12,6 @@ jobs:
     steps:
       - name: Assemble car
         run: |
-          exit 1
           mkdir -p build
           echo "Chassis" > build/car.txt
           echo "Engine" >> build/car.txt
@@ -172,9 +171,9 @@ jobs:
         with:
           name: car-files
           path: build/
-
       - name: Deploy car
         run: |
+          exit 1
           echo "Deploying car to production"
           cat build/car.txt
       - name: Upload failure artifact
