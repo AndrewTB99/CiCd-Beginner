@@ -1,4 +1,4 @@
-name: Test Pipeline
+name: Test Pipeline 2
 
 # The guide's warm-up workflow. Small on purpose: it exists so your very
 # first commit produces a green run, a job graph and an artifact - the three
