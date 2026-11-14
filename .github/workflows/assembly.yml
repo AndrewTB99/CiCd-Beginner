@@ -53,6 +53,7 @@ jobs:
 
   test_car:
     needs: build_car
+    needs: build_motorbike
     runs-on: ubuntu-latest
     steps:
       - name: Download car artifact
